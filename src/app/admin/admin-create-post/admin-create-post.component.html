@@ -1,0 +1,27 @@
+<p *ngIf="error">There was a empty field</p>
+<form class="create_form" (submit)="handleSubmit($event)">
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Title of the Article</mat-label>
+    <input name="title" type="text" matInput [(ngModel)]="PostData.title" value={{PostData.title}}>
+  </mat-form-field>
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Post as</mat-label>
+    <input name="author" type="text" matInput [(ngModel)]="PostData.author" value={{PostData.author}}>
+  </mat-form-field>
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Content of the Article</mat-label>
+    <textarea name="Content" type="text" matInput [(ngModel)]="PostData.content" value={{PostData.content}}></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Tag</mat-label>
+    <input name="tag" type="text" matInput [(ngModel)]="PostData.tag" value={{PostData.tag}}>
+  </mat-form-field>
+  <span>
+    <mat-label>Banner of the article</mat-label>
+    <input name="banner" type="file" (change)="handleFileInput($event)">
+    <img src={{PostData.banner}} />
+  </span>
+  <div class="full_width">
+    <button mat-raised-button type="submit" color="primary">{{editPost ? "Edit" : "Post"}} the Article</button>
+  </div>
+</form>

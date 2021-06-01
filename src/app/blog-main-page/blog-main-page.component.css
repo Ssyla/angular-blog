@@ -1,0 +1,82 @@
+.content {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.content>mat-card {
+  width: 1780px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.mat-elevation-z4:hover {
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4), 0 13px 19px 2px rgba(0, 0, 0, .22), 0 5px 24px 4px rgba(0, 0, 0, .19);
+  transform: translate3d(0, -.5em, 0);
+
+}
+
+.mat-elevation-z4 {
+  background-color: white;
+  color: black;
+}
+
+.postDate {
+  position: relative;
+  color: grey;
+  text-align: right;
+}
+
+.image_banner_article {
+  height: 60%;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .card_blog_page {
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+    margin: 10px
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .card_blog_page {
+    height: 40%;
+    width: 45%;
+    display: inline-block;
+    margin: 10px
+  }
+}
+
+@media only screen and (min-width : 1224px) {
+  .card_blog_page {
+    height: 40%;
+    width: 22.5%;
+    display: inline-block;
+    margin: 10px
+  }
+}
+
+.deleteButton {
+  z-index: 2;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 0;
+  cursor: pointer;
+  color: red;
+}
+
+.deleteIcon {
+  font-size: 30px;
+}

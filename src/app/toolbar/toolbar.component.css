@@ -1,0 +1,16 @@
+.search_bar {
+  position: absolute;
+    right: 3%;
+}
+
+.navbar {
+  background-color:#004365; color:white;
+}
+
+.home_link {
+  background-color:#004365; color:white; text-decoration:none;  padding-left: 46px;
+}
+
+.search_input_tag {
+  color: white
+}

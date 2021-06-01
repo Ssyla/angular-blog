@@ -1,0 +1,22 @@
+<div class="content">
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div fxFlex="25%" *ngFor="let post of items; index as i" class="card_blog_page" >
+    <a class="deleteButton" (click)="deletePost(post.id, i)" *ngIf="Admin">
+      <mat-icon class="deleteIcon" aria-hidden="false" aria-label="Example home icon" fxFlexAlign="center">delete</mat-icon>
+    </a>
+    <mat-card (click)="gotoBlog(post.id, i)" class="mat-elevation-z4">
+      <img mat-card-image class="image_banner_article" src='{{post.banner}}'>
+  <mat-card-content>
+  <mat-card-title style="height: 40%" id="test">
+  {{post.title}}
+  </mat-card-title>
+    <p class="postDate">
+      22/01
+    </p>
+  </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+</div>
+<!-- <button mat-raised-button style="  left: 48%; bottom: 5%">See more</button> -->
+

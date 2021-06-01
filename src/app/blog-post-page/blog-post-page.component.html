@@ -1,0 +1,21 @@
+<mat-card style="padding:5%" class="mat-elevation-z5">
+  <mat-card-title>
+    <h1 style="text-align: center; font-size: 40px; font-weight: bold">{{displayPost.title}}</h1>
+  </mat-card-title>
+  <img mat-card-image style="height: 1000px" src='{{displayPost.banner}}'>
+  <mat-card-content>
+    <div class="infos">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title style="padding-bottom:-28px">&nbsp;{{displayPost.author}}</mat-card-title>
+      <p style="color:grey; text-align: right; margin-top:3px">
+        &nbsp; the 22/01
+      </p>
+    </div>
+  </mat-card-content>
+  <mat-card-content style="font-size:20px">
+    {{displayPost.content}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button style="font-size:20px">Share</button>
+  </mat-card-actions>
+</mat-card>

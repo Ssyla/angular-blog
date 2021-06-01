@@ -1,0 +1,10 @@
+<mat-toolbar class="navbar">
+  <a class="home_link" href="/blog-page">Blog Page</a>
+  <form class="search_bar" (submit)="handleSubmit($event)">
+    <mat-form-field>
+      <mat-label>Categories</mat-label>
+    <input matInput placeholder="cat" name="query" class="search_input_tag" [(ngModel)]="SearchTagModel.query">
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="accent">Search Tag</button>
+  </form>
+</mat-toolbar>
